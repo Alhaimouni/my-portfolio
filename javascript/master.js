@@ -9,13 +9,12 @@ if (mainColor !== null) {
 
   document.querySelectorAll('.colors-list li').forEach(li => {
     li.classList.remove('active');
-  })
-
-  document.querySelectorAll('.colors-list li').forEach(li => {
+    
     if (li.dataset.color == mainColor) {
       li.classList.add('active');
     }
   })
+
 }
 
 // changing landing page images 
@@ -37,7 +36,7 @@ document.querySelector('.gear').onclick = () => {
 
 let colorsLi = document.querySelectorAll('.colors-list li');
 
-colorsLi.forEach((li, i) => {
+colorsLi.forEach(li => {
   li.addEventListener('click', (e) => {
     document.documentElement.style.setProperty('--main-color', e.target.dataset.color);
     localStorage.setItem('main-color', e.target.dataset.color);
