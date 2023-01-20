@@ -34,6 +34,54 @@
         <li data-color="#4CAF50"></li>
       </ul>
     </div>
+
+    <div class="options-bg">
+      <h4>Random background</h4>
+      <div>
+        <span class=" active" data-background="1">Yes</span>
+        <span data-background="0">No</span>
+      </div>
+    </div>
+
+    <div class="options-bullets">
+      <h4>Navigation Bullets</h4>
+      <div>
+        <span class="active" data-show="1">Show</span>
+        <span data-show="0">Hide</span>
+      </div>
+    </div>
+
+    <div class="reset-button">
+      Reset To Default
+    </div>
+  </div>
+
+  <div class="navigate-bullets">
+    <div data-page="landing">
+      <div class="flag">
+        landing
+      </div>
+    </div>
+    <div data-page="skills">
+      <div class="flag">
+        skills
+      </div>
+    </div>
+    <div data-page="portfolio">
+      <div class="flag">
+        portfolio
+      </div>
+    </div>
+    <div data-page="about">
+      <div class="flag">
+        about
+      </div>
+    </div>
+    <div data-page="contact">
+      <div class="flag">
+        contact
+      </div>
+    </div>
   </div>
 
   <div class="landing">
@@ -43,8 +91,9 @@
         <i class="fa-sharp fa-solid fa-bars"></i>
         <ul>
           <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">about</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
@@ -56,6 +105,114 @@
       </div>
     </div>
   </div>
+
+  <div class="skills" id="skills">
+    <div class="container">
+      <h2>Skills & Languages</h2>
+      <div class="skills-box">
+        <div class="sk">
+          <p>html</p>
+          <span>
+            <div data-progress="60%">
+            </div>
+          </span>
+        </div>
+        <div class="sk">
+          <p>CSS</p>
+          <span>
+            <div data-progress="80%">
+            </div>
+          </span>
+        </div>
+        <div class="sk">
+          <p>javascript</p>
+          <span>
+            <div data-progress="100%">
+            </div>
+          </span>
+        </div>
+        <div class="sk">
+          <p>jquery</p>
+          <span>
+            <div data-progress="70%">
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Press at one of shown project to know more details about by display a modal for the related project </p>
+      <div class="images-box">
+        <img src="./assets/l4.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking "
+          title="press to show details">
+        <img src="./assets/l2.jpg" title="press to show details">
+        <img src="./assets/l3.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking ">
+        <img src="./assets/l1.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking "
+          title="press to show details">
+        <img src="./assets/l6.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking "
+          title="press to show details">
+        <img src="./assets/l4.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking "
+          title="press to show details">
+        <img src="./assets/l2.jpg" title="press to show details">
+        <img src="./assets/l3.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking ">
+        <img src="./assets/l1.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking "
+          title="press to show details">
+        <img src="./assets/l6.jpg"
+          alt="image for testing this pargraph comes from the alt attribute from html file for testing and checking "
+          title="press to show details">
+      </div>
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <div class="container">
+      <div class="about-us">
+        <div class="info-box">
+          <h2>About Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, tenetur dolores esse magni
+            ratione distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis non
+            voluptate id?</p>
+        </div>
+        <div class="image-box">
+          <img src="./assets/about-us.jpg" alt="about image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <div class="overlay"></div>
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="">
+        <div class="left">
+          <input type="text" placeholder="Your Name" name="username">
+          <input type="text" placeholder="Your Phone" name="phone">
+          <input type="email" placeholder="Your Email" name="email">
+          <input type="text" placeholder="Subject" name="subject">
+        </div>
+        <div class="right">
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with love by Haimouni</p>
+  </footer>
 
   <script src="./javascript/master.js"></script>
 </body>

@@ -8,8 +8,8 @@ html {
 
 :root {
   --main-color: #FF9800;
+  --section-padding: 100px;
 }
-
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -118,6 +118,7 @@ a {
   .landing header i {
     display: block;
     padding: 25px;
+    display: none;
   }
 
   .landing header ul {
@@ -152,8 +153,24 @@ a {
   color: var(--main-color);
 }
 
+@media (max-width:400px) {
+  .landing .introduction-text {
+    width: 100%;
+    padding: 50px;
+  }
+  .landing .introduction-text h1{
+    font-size: 21px;
+  }
+
+  .landing .introduction-text p{
+
+    font-size: 16px;
+  }
+}
 
 /*------------------------------------------- Settings-Box Styling -------------------------------------------*/
+
+
 
 .settings-box {
   position: fixed;
@@ -164,6 +181,7 @@ a {
   height: 100vh;
   background-color: white;
   z-index: 1000;
+  border-right: 1px solid var(--main-color);
 }
 
 .open {
@@ -180,6 +198,8 @@ a {
   right: calc(0px - 36px);
   top: 180px;
   border-radius: 0px 5px 5px 0px;
+  border: 1px solid var(--main-color);
+  border-left: 1px solid white;
 }
 
 .settings-box .gear i {
@@ -213,8 +233,7 @@ a {
 
 .settings-box .options h4 {
   text-align: center;
-  font-size: 22px;
-  color: var(--main-color);
+  font-size: 15px;
 }
 
 .settings-box .options .colors-list {
@@ -258,4 +277,477 @@ a {
 
 .settings-box .options .colors-list li:nth-child(5) {
   background-color: #4CAF50;
+}
+
+.options-bg,
+.options-bullets {
+  padding: 10px;
+  background-color: rgba(115, 115, 115, 0.244);
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.options-bg h4,
+.options-bullets h4 {
+  text-align: center;
+  font-size: 15px;
+  /* color: var(--main-color); */
+}
+
+.options-bg span,
+.options-bullets span {
+  display: inline-block;
+  background-color: var(--main-color);
+  padding: 3px 17px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.3;
+  min-width: 75px;
+  max-width: 75px;
+  text-align: center;
+}
+
+.options-bg .active,
+.options-bullets .active {
+  border: 3px solid #666;
+  opacity: 1;
+}
+
+.settings-box .reset-button {
+  background-color: rgb(161, 2, 2);
+  color: white;
+  width: 90%;
+  margin: 15px auto;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.settings-box .reset-button:hover {
+  background-color: red;
+  color: white;
+  width: 90%;
+  margin: 15px auto;
+  padding: 20px;
+  text-align: center;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+
+
+/*------------------------------------------- Skills Styling -------------------------------------------*/
+
+
+
+.skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #eee;
+}
+
+.skills .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills .container h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+  margin: 0 0 50px;
+  text-align: center;
+}
+
+.skills .container .skills-box {
+  display: flex;
+  flex-flow: column wrap;
+
+}
+
+.skills .container .skills-box .sk {
+  background-color: #FFF;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+
+.skills .container .skills-box .sk p {
+  background-color: #FFF;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 15px;
+  flex-basis: 15%;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.skills .container .skills-box .sk span {
+  flex: 1;
+  background-color: #f6f6f6;
+  margin: 15px;
+  border-radius: 10px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.skills .container .skills-box .sk span div {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  background-color: var(--main-color);
+  border-radius: 10px 0 0 10px;
+  height: 30px;
+  z-index: 3;
+  transition: width 0.7s;
+}
+
+
+
+/*------------------------------------------- Portfolio Styling -------------------------------------------*/
+
+
+
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+  background-color: white;
+}
+
+.portfolio .container {
+  position: relative;
+}
+
+.portfolio .container h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+  margin: 0 0 25px;
+  text-align: center;
+}
+
+.portfolio .container p {
+line-height: 1.6;
+font-size: 20px;
+font-weight: 300;
+}
+
+.portfolio .container .images-box img {
+  width: 200px;
+  padding: 3px;
+  background-color: #F6F6F6;
+  border: 1px solid #CCC;
+  margin: 5px;
+  cursor: pointer;
+  height: 136.1px;
+}
+
+.modal-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.image-box-popup {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 250px);
+  top: calc(50% - 250px);
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px black;
+}
+
+.image-box-popup img {
+  flex-basis: 80%;
+  max-width: 100%;
+}
+
+.image-box-popup .description {
+  line-height: 1.4;
+}
+
+@media (max-width :768px) {
+  .image-box-popup {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    width: 350px;
+    height: 350px;
+    left: calc(50% - (350px / 2));
+    top: calc(50% - (250px / 2));
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  .image-box-popup img {
+    flex-basis: 80%;
+  }
+  
+  .image-box-popup .description {
+    line-height: 1.4;
+  }
+}
+
+/*------------------------------------------- Bullets Styling -------------------------------------------*/
+
+
+
+
+.navigate-bullets {
+  position: fixed;
+  right: 0px;
+  top: calc(50% - 100px);
+  height: 200px;
+  width: 50px;
+  z-index: 3;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigate-bullets div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  cursor: pointer;
+  position: relative;
+
+}
+
+.navigate-bullets div .flag {
+  position: absolute;
+  left: -115px;
+  top: -7.7px;
+  background-color: var(--main-color);
+  width: 100px;
+  padding: 6px;
+  height: fit-content;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  border-radius: 0%;
+  display: none;
+}
+
+.navigate-bullets div .flag::after {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left: 10px solid var(--main-color);
+  content: '';
+  position: absolute;
+  right: -19px;
+  top: 5px;
+  pointer-events: none;
+}
+
+.navigate-bullets div:hover .flag {
+  display: block;
+}
+
+/*------------------------------------------- Contact Styling -------------------------------------------*/
+
+
+.contact {
+  min-height: 600px;
+  background-image: url('../imgs/contact.png');
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.contact .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .6);
+  /* background-color: rgb(255 255 255 / 60%); */
+}
+
+.contact .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+.contact form {
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact form .left {
+  float: left;
+  width: 49%;
+}
+
+.contact form .right {
+  float: right;
+  width: 49%;
+}
+
+@media (max-width: 767px) {
+
+  .contact form .left,
+  .contact form .right {
+    float: none;
+    width: 100%;
+  }
+}
+
+.contact form input:not([type="submit"]),
+.contact form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #CCC;
+  background-color: rgba(218, 218, 218, 0.19);
+}
+
+.contact form input:not([type="submit"]):focus,
+.contact form textarea:focus {
+  outline: 1px solid var(--main-color);
+}
+
+.contact form input {
+  height: 40px;
+}
+
+.contact form textarea {
+  height: 150px;
+}
+
+.contact form input[type="submit"] {
+  padding: 10px;
+  width: 100%;
+  border-color: transparent;
+  background-color: var(--main-color);
+  color: #FFF;
+  cursor: pointer;
+}
+
+.contact form textarea:focus::-webkit-input-placeholder,
+.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: .3s;
+}
+
+.contact form textarea:focus:-ms-input-placeholder,
+.contact form input:not([type="submit"]):focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: .3s;
+}
+
+.contact form textarea:focus::placeholder,
+.contact form input:not([type="submit"]):focus::placeholder {
+  opacity: 0;
+  transition: .3s;
+}
+
+
+/*------------------------------------------- About Styling -------------------------------------------*/
+
+.about {
+  background-color: #eee;
+}
+
+.about-us {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .about-us {
+    display: block;
+    text-align: center;
+  }
+}
+
+.about-us .info-box {
+  flex: 1;
+  padding: 30px;
+}
+
+@media (max-width: 767px) {
+  .about-us .info-box {
+    padding: 0;
+  }
+}
+
+.about-us .info-box h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+  margin: 0 0 10px;
+}
+
+.about-us .info-box p {
+  line-height: 1.8;
+  color: #767676;
+  margin: 0;
+}
+
+.about-us .image-box {
+  flex: 1;
+  text-align: center;
+}
+
+.about-us .image-box img {
+  width: 250px;
+}
+
+
+
+/*------------------------------------------- Footer Styling -------------------------------------------*/
+
+footer {
+  background-color: rgba(0, 0, 0, 0.774);
+  color: white;
+  display: flex;
+  margin: auto;
+  min-height: 70px;
+  justify-content: center;
+  align-items: center;
 }
