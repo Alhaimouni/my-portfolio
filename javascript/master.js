@@ -1,7 +1,7 @@
 "use strict";
 
 // check local storage data
-localStorage.setItem("random-background", "0");
+// localStorage.setItem("random-background", "0");
 
 let mainColor = localStorage.getItem("main-color");
 let isRandomBackground = localStorage.getItem("random-background");
@@ -82,7 +82,7 @@ function backgroundRandom() {
       document.querySelector(
         ".landing"
       ).style.backgroundImage = `url(../assets/l${imageIndex}.jpg)`;
-    }, 3000);
+    }, 36000);
   } else {
     clearInterval(interval);
     document.querySelector(".landing").classList.add("no-bg");
