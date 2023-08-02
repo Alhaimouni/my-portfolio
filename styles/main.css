@@ -465,7 +465,7 @@ font-weight: 300;
 
 .image-box-popup {
   position: absolute;
-  background-color: white;
+  background-color: rgb(233, 230, 230);
   border-radius: 10px;
   width: 600px;
   height: 600px;
@@ -478,6 +478,11 @@ font-weight: 300;
   padding: 10px;
   text-align: center;
   box-shadow: 2px 2px 10px black;
+}
+
+.image-box-popup>img {
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
 }
 
 .image-box-popup >p:first-of-type{
