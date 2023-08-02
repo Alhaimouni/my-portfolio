@@ -7,7 +7,7 @@ html {
 }
 
 :root {
-  --main-color: #FF9800;
+  --main-color: #4CAF50;
   --section-padding: 100px;
 }
 
@@ -260,7 +260,7 @@ a {
 }
 
 .settings-box .options .colors-list li:nth-child(1) {
-  background-color: #FF9800;
+  background-color: #4CAF50;
 }
 
 .settings-box .options .colors-list li:nth-child(2) {
@@ -276,7 +276,7 @@ a {
 }
 
 .settings-box .options .colors-list li:nth-child(5) {
-  background-color: #4CAF50;
+  background-color: #FF9800;
 }
 
 .options-bg,
