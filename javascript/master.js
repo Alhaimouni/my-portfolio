@@ -1,7 +1,7 @@
 "use strict";
 
 // check local storage data
-// localStorage.setItem("random-background", "0");
+localStorage.setItem("random-background", "0");
 
 let mainColor = localStorage.getItem("main-color");
 let isRandomBackground = localStorage.getItem("random-background");
