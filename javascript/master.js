@@ -170,13 +170,28 @@ images.forEach(img => {
     let image = document.createElement('img');
 
     image.src = img.src;
+ 
     if (img.alt !== '') {
       let description = document.createElement('p');
+      let langs = document.createElement('p');
+      langs.textContent = `${img.dataset.tools}`
+      let liveLink = document.createElement('a');
+      liveLink.href = img.dataset.url
+      liveLink.textContent = `Deployed Link: ${img.dataset.url}`
+      let github = document.createElement('a');
+      github.href = img.dataset.gh
+      github.target = '_blank'
+      liveLink.target = '_blank'
+      github.textContent = `Go To Github Repo`
+
       description.className = 'description'
       description.textContent = img.alt
       imageBox.appendChild(image);
       imageBox.appendChild(description);
-
+      imageBox.appendChild(langs);
+      imageBox.appendChild(github);
+      imageBox.appendChild(document.createElement('hr'));
+      imageBox.appendChild(liveLink);
 
     } else {
       let description = document.createElement('p');

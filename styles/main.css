@@ -467,10 +467,10 @@ font-weight: 300;
   position: absolute;
   background-color: white;
   border-radius: 10px;
-  width: 500px;
-  height: 500px;
-  left: calc(50% - 250px);
-  top: calc(50% - 250px);
+  width: 600px;
+  height: 600px;
+  left: calc(50% - 300px);
+  top: calc(50% - 300px);
   z-index: 10001;
   display: flex;
   flex-direction: column;
@@ -480,8 +480,31 @@ font-weight: 300;
   box-shadow: 2px 2px 10px black;
 }
 
+.image-box-popup >p:first-of-type{
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.image-box-popup >p:last-of-type{
+  color: var(--main-color);
+  margin-top: 5px;
+  margin-bottom: 50px;
+  font-size: 13px;
+}
+
+.image-box-popup >a{
+  color: black;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+.image-box-popup >a:hover{
+  color: var(--main-color);
+  border-left: 1px solid var(--main-color);
+  border-right: 1px solid var(--main-color)
+}
+
 .image-box-popup img {
-  flex-basis: 80%;
+  flex-basis: 60%;
   max-width: 100%;
 }
 
