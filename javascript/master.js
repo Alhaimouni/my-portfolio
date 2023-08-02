@@ -89,7 +89,7 @@ function backgroundRandom() {
   }
 }
 
-backgroundRandom();
+// backgroundRandom();
 
 // open settings box
 
