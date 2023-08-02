@@ -7,12 +7,12 @@ html {
 }
 
 :root {
-  --main-color: #4CAF50;
+  --main-color: #4caf50;
   --section-padding: 100px;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
@@ -29,29 +29,25 @@ a {
   margin: 0px auto;
 }
 
-@media (min-width :768px) {
+@media (min-width: 768px) {
   .container {
-    width: 750px
+    width: 750px;
   }
 }
 
-@media (min-width :992px) {
+@media (min-width: 992px) {
   .container {
-    width: 970px
+    width: 970px;
   }
 }
 
-@media (min-width:1200px) {
+@media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
 
-
-
 /*------------------------------------------- Landing Styling -------------------------------------------*/
-
-
 
 .landing {
   background-image: url(../assets/l1.jpg);
@@ -61,7 +57,7 @@ a {
 }
 
 .landing::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -114,7 +110,7 @@ a {
   display: none;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .landing header i {
     display: block;
     padding: 25px;
@@ -153,24 +149,21 @@ a {
   color: var(--main-color);
 }
 
-@media (max-width:400px) {
+@media (max-width: 400px) {
   .landing .introduction-text {
     width: 100%;
     padding: 50px;
   }
-  .landing .introduction-text h1{
+  .landing .introduction-text h1 {
     font-size: 21px;
   }
 
-  .landing .introduction-text p{
-
+  .landing .introduction-text p {
     font-size: 16px;
   }
 }
 
 /*------------------------------------------- Settings-Box Styling -------------------------------------------*/
-
-
 
 .settings-box {
   position: fixed;
@@ -260,11 +253,11 @@ a {
 }
 
 .settings-box .options .colors-list li:nth-child(1) {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .settings-box .options .colors-list li:nth-child(2) {
-  background-color: #E91E63;
+  background-color: #e91e63;
 }
 
 .settings-box .options .colors-list li:nth-child(3) {
@@ -272,11 +265,11 @@ a {
 }
 
 .settings-box .options .colors-list li:nth-child(4) {
-  background-color: #03A9F4;
+  background-color: #03a9f4;
 }
 
 .settings-box .options .colors-list li:nth-child(5) {
-  background-color: #FF9800;
+  background-color: #ff9800;
 }
 
 .options-bg,
@@ -340,11 +333,7 @@ a {
   cursor: pointer;
 }
 
-
-
 /*------------------------------------------- Skills Styling -------------------------------------------*/
-
-
 
 .skills {
   padding-top: var(--section-padding);
@@ -368,18 +357,17 @@ a {
 .skills .container .skills-box {
   display: flex;
   flex-flow: column wrap;
-
 }
 
 .skills .container .skills-box .sk {
-  background-color: #FFF;
+  background-color: #fff;
   display: flex;
   align-items: center;
   margin: 15px;
 }
 
 .skills .container .skills-box .sk p {
-  background-color: #FFF;
+  background-color: #fff;
   text-align: center;
   padding: 15px;
   margin-bottom: 15px;
@@ -400,7 +388,7 @@ a {
 }
 
 .skills .container .skills-box .sk span div {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -412,11 +400,7 @@ a {
   transition: width 0.7s;
 }
 
-
-
 /*------------------------------------------- Portfolio Styling -------------------------------------------*/
-
-
 
 .portfolio {
   padding-top: var(--section-padding);
@@ -433,24 +417,42 @@ a {
   font-weight: bold;
   font-size: 30px;
   color: var(--main-color);
-  margin: 0 0 25px;
+  margin: 0 0 20px;
   text-align: center;
 }
 
 .portfolio .container p {
-line-height: 1.6;
-font-size: 20px;
-font-weight: 300;
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 50px;
+}
+
+.portfolio .container .images-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
 .portfolio .container .images-box img {
-  width: 200px;
+  max-width: 40%;
+  min-width: 40%;
   padding: 3px;
-  background-color: #F6F6F6;
-  border: 1px solid #CCC;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
   margin: 5px;
   cursor: pointer;
-  height: 136.1px;
+  max-height: 50%;
+  min-height: 50%;
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+
+.portfolio .container .images-box img:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--main-color);
 }
 
 .modal-background {
@@ -480,32 +482,32 @@ font-weight: 300;
   box-shadow: 2px 2px 10px black;
 }
 
-.image-box-popup>img {
+.image-box-popup > img {
   border: 1px solid var(--main-color);
   border-radius: 10px;
 }
 
-.image-box-popup >p:first-of-type{
+.image-box-popup > p:first-of-type {
   font-weight: bold;
   margin-bottom: 2px;
 }
-.image-box-popup >p:last-of-type{
+.image-box-popup > p:last-of-type {
   color: var(--main-color);
   margin-top: 5px;
   margin-bottom: 50px;
   font-size: 13px;
 }
 
-.image-box-popup >a{
+.image-box-popup > a {
   color: black;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
 }
 
-.image-box-popup >a:hover{
+.image-box-popup > a:hover {
   color: var(--main-color);
   border-left: 1px solid var(--main-color);
-  border-right: 1px solid var(--main-color)
+  border-right: 1px solid var(--main-color);
 }
 
 .image-box-popup img {
@@ -517,15 +519,23 @@ font-weight: 300;
   line-height: 1.4;
 }
 
-@media (max-width :768px) {
+@media (max-width: 768px) {
+  .portfolio .container .images-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-direction: column;
+  }
   .image-box-popup {
     position: absolute;
     background-color: white;
     border-radius: 10px;
     width: 350px;
-    height: 350px;
+    height: 450px;
     left: calc(50% - (350px / 2));
-    top: calc(50% - (250px / 2));
+    top: calc(50% - (650px / 2));
     z-index: 10001;
     display: flex;
     flex-direction: column;
@@ -534,20 +544,22 @@ font-weight: 300;
     text-align: center;
     box-shadow: 2px 2px 10px black;
   }
-  
+
   .image-box-popup img {
     flex-basis: 80%;
   }
-  
+
+  .portfolio .container .images-box img {
+    width: 250px;
+    height: 200px;
+  }
+
   .image-box-popup .description {
     line-height: 1.4;
   }
 }
 
 /*------------------------------------------- Bullets Styling -------------------------------------------*/
-
-
-
 
 .navigate-bullets {
   position: fixed;
@@ -569,7 +581,6 @@ font-weight: 300;
   background-color: var(--main-color);
   cursor: pointer;
   position: relative;
-
 }
 
 .navigate-bullets div .flag {
@@ -592,7 +603,7 @@ font-weight: 300;
   height: 0;
   border: 10px solid transparent;
   border-left: 10px solid var(--main-color);
-  content: '';
+  content: "";
   position: absolute;
   right: -19px;
   top: 5px;
@@ -605,10 +616,9 @@ font-weight: 300;
 
 /*------------------------------------------- Contact Styling -------------------------------------------*/
 
-
 .contact {
   min-height: 600px;
-  background-image: url('../imgs/contact.png');
+  background-image: url("../imgs/contact.png");
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -621,7 +631,7 @@ font-weight: 300;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, 0.6);
   /* background-color: rgb(255 255 255 / 60%); */
 }
 
@@ -655,7 +665,6 @@ font-weight: 300;
 }
 
 @media (max-width: 767px) {
-
   .contact form .left,
   .contact form .right {
     float: none;
@@ -669,7 +678,7 @@ font-weight: 300;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   background-color: rgba(218, 218, 218, 0.19);
 }
 
@@ -691,28 +700,27 @@ font-weight: 300;
   width: 100%;
   border-color: transparent;
   background-color: var(--main-color);
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
 }
 
 .contact form textarea:focus::-webkit-input-placeholder,
 .contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact form textarea:focus:-ms-input-placeholder,
 .contact form input:not([type="submit"]):focus:-ms-input-placeholder {
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact form textarea:focus::placeholder,
 .contact form input:not([type="submit"]):focus::placeholder {
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 
 /*------------------------------------------- About Styling -------------------------------------------*/
 
@@ -760,12 +768,17 @@ font-weight: 300;
 .about-us .image-box {
   flex: 1;
   text-align: center;
+
 }
 
 .about-us .image-box img {
   width: 250px;
+  border-radius: 5px;
 }
 
+.about-us > .history {
+  
+}
 
 
 /*------------------------------------------- Footer Styling -------------------------------------------*/

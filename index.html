@@ -1,264 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/all.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/all.css">
-  <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    <title>Haimouni Portfolio</title>
+    <link rel="icon" href="./assets/batata.png" />
+  </head>
 
-  <title>Haimouni Portfolio</title>
-  <link rel="icon" href="./assets/batata.png">
-</head>
-
-<body>
-  <div class="settings-box">
-    <div class="gear">
-      <i class="fa fa-gear"></i>
-    </div>
-    <div class="options">
-      <h4>Theme Color</h4>
-      <ul class="colors-list">
-        <li class="active" data-color="#4CAF50"></li>
-        <li data-color="#E91E63"></li>
-        <li data-color="#009688"></li>
-        <li data-color="#03A9F4"></li>
-        <li data-color="#FF9800"></li>
-      </ul>
-    </div>
-
-    <div class="options-bg">
-      <h4>Random background</h4>
-      <div>
-        <span class=" active" data-background="1">Yes</span>
-        <span data-background="0">No</span>
+  <body>
+    <div class="settings-box">
+      <div class="gear">
+        <i class="fa fa-gear"></i>
       </div>
-    </div>
-
-    <div class="options-bullets">
-      <h4>Navigation Bullets</h4>
-      <div>
-        <span class="active" data-show="1">Show</span>
-        <span data-show="0">Hide</span>
-      </div>
-    </div>
-
-    <div class="reset-button">
-      Reset To Default
-    </div>
-  </div>
-
-  <div class="navigate-bullets">
-    <div data-page="landing">
-      <div class="flag">
-        landing
-      </div>
-    </div>
-    <div data-page="skills">
-      <div class="flag">
-        skills
-      </div>
-    </div>
-    <div data-page="portfolio">
-      <div class="flag">
-        portfolio
-      </div>
-    </div>
-    <div data-page="about">
-      <div class="flag">
-        about
-      </div>
-    </div>
-    <div data-page="contact">
-      <div class="flag">
-        contact
-      </div>
-    </div>
-  </div>
-
-  <div class="landing">
-    <div class="container">
-      <header>
-        <div class="logo">Portfolio of Achievements</div>
-        <i class="fa-sharp fa-solid fa-bars"></i>
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <div class="options">
+        <h4>Theme Color</h4>
+        <ul class="colors-list">
+          <li class="active" data-color="#4CAF50"></li>
+          <li data-color="#E91E63"></li>
+          <li data-color="#009688"></li>
+          <li data-color="#03A9F4"></li>
+          <li data-color="#FF9800"></li>
         </ul>
-      </header>
-      <div class="introduction-text">
-        <h1><span>Haimouni's</span> Board</h1>
-        <p>Hello, This portfolio reflects my growth, challenges faced, and the valuable lessons learned. I aim to inspire and collaborate with fellow developers and creators, as I believe innovation thrives in a collaborative environment. Whether you're an aspiring developer, potential collaborator, or simply interested in software, I hope you find something that sparks your curiosity.</p>
       </div>
-    </div>
-  </div>
 
-  <div class="skills" id="skills">
-    <div class="container">
-      <h2>Skills & Languages</h2>
-      <div class="skills-box">
-        <div class="sk">
-          <p>html</p>
-          <span>
-            <div data-progress="90%">
-            </div>
-          </span>
-        </div>
-        <div class="sk">
-          <p>CSS</p>
-          <span>
-            <div data-progress="80%">
-            </div>
-          </span>
-        </div>
-        <div class="sk">
-          <p>javascript</p>
-          <span>
-            <div data-progress="75%">
-            </div>
-          </span>
-        </div>
-        <div class="sk">
-          <p>Angular</p>
-          <span>
-            <div data-progress="80%">
-            </div>
-          </span>
-        </div>
-        <div class="sk">
-          <p>React</p>
-          <span>
-            <div data-progress="70%">
-            </div>
-          </span>
+      <div class="options-bg">
+        <h4>Random background</h4>
+        <div>
+          <span class="active" data-background="1">Yes</span>
+          <span data-background="0">No</span>
         </div>
       </div>
+
+      <div class="options-bullets">
+        <h4>Navigation Bullets</h4>
+        <div>
+          <span class="active" data-show="1">Show</span>
+          <span data-show="0">Hide</span>
+        </div>
+      </div>
+
+      <div class="reset-button">Reset To Default</div>
     </div>
-  </div>
 
-  <div class="portfolio" id="portfolio">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <p>Explore my journey as a passionate software developer. Click on any project to reveal more details in a modal. Let's create something extraordinary together! 🚀</p>
-      <div class="images-box">
-
-          <img
-          src="https://i.ibb.co/Pj583yP/t1.png"
-          alt="Pure portfolio design -Old Is Gold 01-"
-          data-url="https://alhaimouni.github.io/css-template-01"
-          data-gh="https://github.com/Alhaimouni/css-template-01"
-          data-tools="HTML5 | CSS3"
-          title="Click to see the project details"
-          loading="lazy"
-          >
-          <img
-          src="https://i.ibb.co/QPQH8Hh/T2.png"
-          alt="Pure Portfolio design -Old Is Gold 02-"
-          data-url="https://alhaimouni.github.io/css-template-02"
-          data-gh="https://github.com/Alhaimouni/css-template-02"
-          data-tools="HTML5 | CSS3"
-          title="Click to see the project details"
-          loading="lazy"
-          >
-          <img
-          src="https://i.ibb.co/f1S52kG/Screenshot-from-2023-08-02-12-29-23.png"
-          alt="Angular course udemy project with firebase service"
-          data-url="https://uc-project-f919f.web.app"
-          data-gh="https://github.com/Alhaimouni/ang-uc"
-          data-tools="Angular | Firebase | BootStrap"
-          title="Click to see the project details"
-          loading="lazy"
-          >
-          <img
-          src="https://i.ibb.co/QYfF6YM/c19.png"
-          alt="Covid-19 news CRUD application using MERN stack to show the latest results of the virus spreading and the ability to add the important data to mongo database"
-          data-url="https://covid-19-frontend.netlify.app"
-          data-gh="https://github.com/Alhaimouni/covid-19-frontend"
-          data-tools="React | MongoDB | Express | CSS3"
-          title="Click to see the project details"
-          loading="lazy"
-          >
-          <img
-          src="https://i.ibb.co/S3FzBg7/r.png"
-          alt="Raiveny is an application that provide health calculator and more by using CRUD with Auth0"
-          data-url="https://raiveny.netlify.app"
-          data-gh="https://github.com/Raiveny/raiveny-front-end"
-          data-tools="React | MongoDB | Express | CSS3 | Chackra-UI | Auth0"
-          title="Click to see the project details"
-          loading="lazy"
-          >
-          <img
-          src="https://i.ibb.co/4ZR9Xc6/ff.png"
-          alt="Furry Friends Finder is an adoption app that allows to the user to create an account and adopte a cute furry from the avilable ones just by a click"
-          data-url="https://alhaimouni.github.io/furryfrindsfinder/"
-          data-gh="https://github.com/Alhaimouni/furryfrindsfinder"
-          data-tools="JavaScript | BootStrap | CSS3 | Auth0"
-          title="Click to see the project details"
-          loading="lazy"
-          >
-          <img
-          src="https://assets.materialup.com/uploads/41b98354-8e02-4b8c-a148-7182f703cddf/preview.png"
-          alt="Journy App is an application that makes the user / school pick an Trip to live full of joy one"
-          data-url="https://alhaimouni.github.io/furryfrindsfinder/"
-          data-gh="https://github.com/School-trip-app/School-trip-app-frontend"
-          data-tools="React | BootStrap | CSS3 | Chakra-UI | Redux"
-          title="Click to see the project details"
-          loading="lazy"
-          >
+    <div class="navigate-bullets">
+      <div data-page="landing">
+        <div class="flag">landing</div>
+      </div>
+      <div data-page="skills">
+        <div class="flag">skills</div>
+      </div>
+      <div data-page="portfolio">
+        <div class="flag">portfolio</div>
+      </div>
+      <div data-page="about">
+        <div class="flag">about</div>
+      </div>
+      <div data-page="contact">
+        <div class="flag">contact</div>
       </div>
     </div>
-  </div>
 
-  <div class="about" id="about">
-    <div class="container">
-      <div class="about-us">
-        <div class="info-box">
-          <h2>About Us</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsum, tenetur dolores esse magni
-            ratione distinctio! Quod iusto neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis non
-            voluptate id?</p>
-        </div>
-        <div class="image-box">
-          <img src="./assets/about-us.jpg" alt="about image">
+    <div class="landing">
+      <div class="container">
+        <header>
+          <div class="logo">Achievements Page</div>
+          <i class="fa-sharp fa-solid fa-bars"></i>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </header>
+        <div class="introduction-text">
+          <h1><span>Haimouni's</span> Board</h1>
+          <p>
+            Hello my name is Mohammad Al-Haimouni, This portfolio reflects my
+            growth, challenges faced, and the valuable lessons learned. I aim to
+            inspire and collaborate with fellow developers and creators, as I
+            believe innovation thrives in a collaborative environment. Whether
+            you're an aspiring developer, potential collaborator, or simply
+            interested in software, I hope you find something that sparks your
+            curiosity.
+          </p>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="contact" id="contact">
-    <div class="overlay"></div>
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form action="">
-        <div class="left">
-          <input type="text" placeholder="Your Name" name="username">
-          <input type="text" placeholder="Your Phone" name="phone">
-          <input type="email" placeholder="Your Email" name="email">
-          <input type="text" placeholder="Subject" name="subject">
+    <div class="skills" id="skills">
+      <div class="container">
+        <h2>Skills & Languages</h2>
+        <div class="skills-box">
+          <div class="sk">
+            <p>html</p>
+            <span>
+              <div data-progress="90%"></div>
+            </span>
+          </div>
+          <div class="sk">
+            <p>CSS</p>
+            <span>
+              <div data-progress="80%"></div>
+            </span>
+          </div>
+          <div class="sk">
+            <p>javascript</p>
+            <span>
+              <div data-progress="75%"></div>
+            </span>
+          </div>
+          <div class="sk">
+            <p>Angular</p>
+            <span>
+              <div data-progress="80%"></div>
+            </span>
+          </div>
+          <div class="sk">
+            <p>React</p>
+            <span>
+              <div data-progress="70%"></div>
+            </span>
+          </div>
         </div>
-        <div class="right">
-          <textarea name="message" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send">
-        </div>
-      </form>
+      </div>
     </div>
-  </div>
 
-  <footer>
-    <p>Made with love by Haimouni</p>
-  </footer>
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <p>
+          Explore my journey as a passionate software developer. Click on any
+          project to reveal more details in a modal. Let's create something
+          extraordinary together! 🚀
+        </p>
+        <div class="images-box">
+          <img
+            src="https://i.ibb.co/Pj583yP/t1.png"
+            alt="Pure portfolio design -Old Is Gold 01-"
+            data-url="https://alhaimouni.github.io/css-template-01"
+            data-gh="https://github.com/Alhaimouni/css-template-01"
+            data-tools="HTML5 | CSS3"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+            src="https://i.ibb.co/QPQH8Hh/T2.png"
+            alt="Pure Portfolio design -Old Is Gold 02-"
+            data-url="https://alhaimouni.github.io/css-template-02"
+            data-gh="https://github.com/Alhaimouni/css-template-02"
+            data-tools="HTML5 | CSS3"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+            src="https://i.ibb.co/f1S52kG/Screenshot-from-2023-08-02-12-29-23.png"
+            alt="Angular course udemy project with firebase service"
+            data-url="https://uc-project-f919f.web.app"
+            data-gh="https://github.com/Alhaimouni/ang-uc"
+            data-tools="Angular | Firebase | BootStrap"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+            src="https://i.ibb.co/QYfF6YM/c19.png"
+            alt="Covid-19 news CRUD application using MERN stack to show the latest results of the virus spreading and the ability to add the important data to mongo database"
+            data-url="https://covid-19-frontend.netlify.app"
+            data-gh="https://github.com/Alhaimouni/covid-19-frontend"
+            data-tools="React | MongoDB | Express | CSS3"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+            src="https://i.ibb.co/S3FzBg7/r.png"
+            alt="Raiveny is an application that provide health calculator and more by using CRUD with Auth0"
+            data-url="https://raiveny.netlify.app"
+            data-gh="https://github.com/Raiveny/raiveny-front-end"
+            data-tools="React | MongoDB | Express | CSS3 | Chackra-UI | Auth0"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+            src="https://i.ibb.co/4ZR9Xc6/ff.png"
+            alt="Furry Friends Finder is an adoption app that allows to the user to create an account and adopte a cute furry from the avilable ones just by a click"
+            data-url="https://alhaimouni.github.io/furryfrindsfinder"
+            data-gh="https://github.com/Alhaimouni/furryfrindsfinder"
+            data-tools="JavaScript | BootStrap | CSS3 | Auth0"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+            src="https://i.ibb.co/2Yg4Pyq/sc.png"
+            alt="Journy App is an application that makes the user / school pick an Trip to live full of joy one"
+            data-url="https://alhaimouni.github.io/furryfrindsfinder"
+            data-gh="https://github.com/School-trip-app/School-trip-app-frontend"
+            data-tools="React | BootStrap | CSS3 | Chakra-UI | Redux"
+            title="Click to see the project details"
+            loading="lazy"
+          />
+          <img
+          src="https://i.ibb.co/BfQRx1j/mae.png"
+          alt="Responsive Web design with carosels implementdet using pure js and css3 animations"
+          data-url="https://alhaimouni.github.io/mae-eatly"
+          data-gh="https://github.com/Alhaimouni/mae-eatly"
+          data-tools="JS | HTML5 | CSS3"
+          title="Click to see the project details"
+          loading="lazy"
+        />
+        </div>
+      </div>
+    </div>
 
-  <script src="./javascript/master.js"></script>
-</body>
+    <div class="about" id="about">
+      <div class="container">
+        <div class="about-us">
+          <div class="info-box">
+            <h2>About Me</h2>
+            <p>
+              As a highly skilled front-end developer with a background in
+              electrical engineering, i possess a unique combination of
+              technical experties and creative problem-solving skills. With a
+              passion for creating visually appealing and user-friendly
+              interfaces, i bring a deep understanding of software development.
+              I am confident in my ability to bring value to any organization
+              seeking a talented front-end developer with technical edge.
+            </p>
+          </div>
+          <div class="image-box">
+            <img src="https://i.ibb.co/0DVnby4/Self-Image.jpg" alt="Mohammad Al-Haimouni" />
+          </div>
+          <div class="history">
+            
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="contact" id="contact">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form action="">
+          <div class="left">
+            <input type="text" placeholder="Your Name" name="username" />
+            <input type="text" placeholder="Your Phone" name="phone" />
+            <input type="email" placeholder="Your Email" name="email" />
+            <input type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="right">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with love by Haimouni</p>
+    </footer>
+
+    <script src="./javascript/master.js"></script>
+  </body>
 </html>
