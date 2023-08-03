@@ -365,7 +365,7 @@ a {
   line-height: 1.6;
   font-size: 20px;
   font-weight: 300;
-  margin: 0 0 50px;
+  margin: 0 0 -40px;
   text-align: center;
 }
 
@@ -691,6 +691,10 @@ a {
   text-align: center;
 }
 
+.contact p:hover {
+  color: var(--main-color);
+}
+
 .contact form {
   overflow: hidden;
   max-width: 800px;
@@ -926,6 +930,13 @@ footer {
   .skill {
     display: flex;
     flex-direction: column;
+  }
+
+  .skd .skd-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 100px;
+    margin-bottom: 60px;
   }
 }
 
